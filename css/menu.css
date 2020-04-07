@@ -1,0 +1,86 @@
+.menubar {
+    user-select: none;
+    z-index: 5;
+    width: 700px;
+    /* height: 500px; */
+    /* margin: 0 auto; */
+    /* background-color: yellow; */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.note-title {
+    width: 700px;
+    /* background-color: rgb(42, 217, 248); */
+    left: 21px;
+    position: fixed;
+    top: 21px;
+    margin: 0;
+    padding: 0;
+    border:1px solid black ;
+    border-bottom: none;
+}
+
+.note-title .title {
+    border: 1px solid white;
+    box-sizing: border-box;
+    cursor: default;
+    display: inline-block;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+}
+
+.note-title .title:hover {
+    box-sizing: border-box;
+    background-color: #cce8ff;
+    border: 1px solid #99d1ff;
+}
+
+.menubar .details {
+    border: 1px solid rgb(238, 230, 230);
+    background-color: rgb(238, 230, 230);
+    box-shadow: 5px 5px 5px #a6a6a6;
+    font-size: 14px;
+    margin: 0;
+    padding: 2px;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+}
+
+.menubar .menuitems {
+    display: block;
+    height: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-left: 2px;
+    margin-right: 1px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.menubar .menuitems:hover {
+    background-color: #99d1ff;
+    height: 22px;
+}
+
+.menubar .kjkey {
+    position: absolute;
+    right: 20px;
+}
+
+.menubar .forbid {
+    color: #6d6d6d;
+}
+
+.menubar .menuhr {
+    border: 1px solid #d7d7d7;
+    display: block;
+    height: 0px;
+    margin: 4px;
+    margin-left: 20px;
+}
