@@ -1,5 +1,5 @@
 {
-  "name": "hm",
+  "name": "homework5",
   "version": "1.0.0",
   "description": "",
   "main": "list.js",
@@ -24,5 +24,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizhaoyun/homework5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lizhaoyun/homework5/issues"
+  },
+  "homepage": "https://github.com/lizhaoyun/homework5#readme"
 }
