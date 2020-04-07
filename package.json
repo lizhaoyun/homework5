@@ -4,7 +4,8 @@
   "description": "",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "grunt lint",
+    "build": "grunt build"
   },
   "dependencies": {
     "grunt": "^1.1.0",
