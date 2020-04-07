@@ -1,3 +1,8 @@
+/*global $:true*/
+/*global fontList:true*/
+/* exported $dlgFont */
+/*eslint no-unused-vars: ["error", { "vars": "local" }]*/
+/*eslint no-unused-vars: ["error", {"args": "after-used"}]*/
 var $dlgFont = (function() {
     var fontlg = $('' +
         '<div class="notepad-dlg-mask notepad-dlg-font">' +
@@ -30,14 +35,14 @@ var $dlgFont = (function() {
         '</div>');
 
     var $btnOk = fontlg.find('.btn-ok'),
-        $btnClose = fontlg.find('.close-btn'),
-        $btnCancel = fontlg.find('.btn-cancel'),
-        $sample = fontlg.find('.sample-txt'),
-        $titleBar = fontlg.find('.notepad-dlg-titlebar');
+            $btnClose = fontlg.find('.close-btn'),
+            $btnCancel = fontlg.find('.btn-cancel'),
+            $sample = fontlg.find('.sample-txt'),
+            $titleBar = fontlg.find('.notepad-dlg-titlebar');
 
     var fonts = ['Agency FB', 'Algerian', 'Arial', 'Arial Rounded MT', 'Axure Handwriting', 'Bahnschrift', 'Baskerville Old Face', 'Bauhaus 93', 'Bell MT', 'Berlin Sans FB', 'Bernard MT', 'BlackAdder ITC'],
-        styles = ['常规', '斜体', '粗体', '粗偏斜体'],
-        sizes = ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '28', '36', '48', '72'];
+            styles = ['常规', '斜体', '粗体', '粗偏斜体'],
+            sizes = ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '28', '36', '48', '72'];
     var cfg = {
         family: 'Arial',
         style: '常规',
@@ -69,7 +74,7 @@ var $dlgFont = (function() {
         //     styles = ['常规', '斜体', '粗体', '粗偏斜体'],
         //     sizes = ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '28', '36', '48', '72'];
 
-            console.log(',,,,,,,')
+        console.log(',,,,,,,');
         var l1 = new fontList();
         l1.show({
             container: '.notepad-dlg-font .font-family',
@@ -87,7 +92,7 @@ var $dlgFont = (function() {
         var l2 = new fontList();
         l2.show({
             container: '.notepad-dlg-font .font-style',
-            select: 3,
+            // select: 3,
             width: '132px',
             list: styles,
             select: styles.indexOf(cfg.style),

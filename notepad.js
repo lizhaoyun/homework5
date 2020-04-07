@@ -1,3 +1,8 @@
+/*global $:true*/
+/*global showContent:true*/
+/*global $menubar:true*/
+
+
 var notepad = {}; // Notepad 主程序对象
 
 notepad.config = {

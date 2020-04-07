@@ -1,8 +1,10 @@
-var $menubar = (function() {
+/*global $:true*/
+
+var $menubar = (function () {
     var $bar = $('<div class="menubar"></div>');
 
-    var menuData, 
-        menus = [];
+    var menuData;
+    var menus = [];
 
     var active = -1;
 
@@ -19,7 +21,7 @@ var $menubar = (function() {
 
             $titlelist.append(newli);
 
-            newli.click(function() {
+            newli.click(function () {
                 var i = Number(this.dataset.id);
 
                 if (active === -1) {
@@ -35,7 +37,7 @@ var $menubar = (function() {
                 }
             });
 
-            newli.hover(function() {
+            newli.hover(function () {
                 if (active !== -1) {
                     var i = Number(this.dataset.id);
 
@@ -63,7 +65,7 @@ var $menubar = (function() {
                         break;
                     default:
                         var $newli = $('<li class="menuitems"></li>');
-                        var $newspan = $('<span class="shortcut"></span>')
+                        var $newspan = $('<span class="shortcut"></span>');
                         $newli.html(details[k]['title']);
                         $newspan.html(details[k]['shortcut']);
 
@@ -85,12 +87,12 @@ var $menubar = (function() {
                         $newli.append($newspan);
                         $detailbox.append($newli);
 
-                        $newli.click(function() {
+                        $newli.click(function () {
                             if ($(this).hasClass('forbid'))
                                 return;
 
-                            var i = this.dataset.x,
-                                j = this.dataset.y;
+                            var i = this.dataset.x;
+                            var j = this.dataset.y;
 
                             menuData[i].menuItems[j].handler();
                             menus[i].css({ display: 'none' });

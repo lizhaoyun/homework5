@@ -1,0 +1,28 @@
+{
+  "name": "hm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "list.js",
+  "dependencies": {
+    "grunt": "^1.1.0",
+    "grunt-eslint": "^22.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-htmlhint": "^0.9.13",
+    "grunt-contrib-csslint": "^2.0.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-usemin": "^3.1.1"
+  },
+  "scripts": {
+    "test": "grunt lint",
+    "build": "grunt build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

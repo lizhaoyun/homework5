@@ -1,3 +1,5 @@
+/*global $:true*/
+
 function fontList() {
     var fonlist = $('' +
         '<div class="notepad-font-list">' +
@@ -5,8 +7,8 @@ function fontList() {
         '<ul class="list">' +
         '</ul>' +
         '</div>');
-    var edtype = fonlist.find(".editetype");
-    var list = fonlist.find(".list");
+    var edtype = fonlist.find('.editetype');
+    var list = fonlist.find('.list');
     var init = {
         container: '',
         list: [],
@@ -47,7 +49,7 @@ function fontList() {
             for (i = 0; i < init.list.length; i++) {
                 item = $('<li class="item"></li>');
                 setFontStyle(item, init.list[i]);
-                item.html(init.list[i])
+                item.html(init.list[i]);
                 list.append(item);
             }
         } else {
@@ -70,7 +72,7 @@ function fontList() {
     function initial() {
         var oldone = $(init.container).find('.notepad-font-list');
         console.log(oldone.length !== 0);
-        if (oldone.length !== 0) 
+        if (oldone.length !== 0)
             oldone.remove();
 
         $(init.container).append(fonlist);
@@ -81,11 +83,11 @@ function fontList() {
     }
 
 
-    this.show = function(conf) {
+    this.show = function (conf) {
         $.extend(init, conf);
         initial();
 
-        list.click(function(e) {
+        list.click(function (e) {
             $($items[init.select]).removeClass('selected');
             init.select = init.list.indexOf($(e.target).html());
             $($items[init.select]).addClass('selected');
@@ -94,7 +96,7 @@ function fontList() {
             init.selectHandler(init.select);
         });
 
-        edtype.keyup(function() {
+        edtype.keyup(function () {
             var i = 0;
 
             for (i = 0; i < init.list.length; i++) {
@@ -120,9 +122,9 @@ function comList() {
         '</ul>' +
         '</div>');
 
-    var $editor = $comList.find('.editor'),
-        $list = $comList.find('.list'),
-        $items;
+    var $editor = $comList.find('.editor');
+    var $list = $comList.find('.list');
+    var $items;
 
     var cfg = {
         container: '',
@@ -152,8 +154,8 @@ function comList() {
     }
 
     function fillData() {
-        var i = 0,
-            $item;
+        var i = 0;
+        var $item;
 
         if (cfg.isFont) {
             for (i = 0; i < cfg.list.length; i++) {
@@ -194,11 +196,11 @@ function comList() {
         setSelect(cfg.select);
     }
 
-    this.show = function(conf) {
+    this.show = function (conf) {
         $.extend(cfg, conf);
         init();
 
-        $list.click(function(e) {
+        $list.click(function (e) {
             $($items[cfg.select]).removeClass('selected');
             cfg.select = cfg.list.indexOf($(e.target).html());
             $($items[cfg.select]).addClass('selected');
@@ -207,7 +209,7 @@ function comList() {
             cfg.selectHandler(cfg.select);
         });
 
-        $editor.keyup(function() {
+        $editor.keyup(function () {
             var i = 0;
 
             for (i = 0; i < cfg.list.length; i++) {

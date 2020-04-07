@@ -1,25 +1,23 @@
 .menubar {
-    user-select: none;
-    z-index: 5;
-    width: 700px;
-    /* height: 500px; */
-    /* margin: 0 auto; */
-    /* background-color: yellow; */
+    left: 20px;
     position: fixed;
     top: 20px;
-    left: 20px;
+    user-select: none;
+    width: 700px;
+    z-index: 5;
 }
 
 .note-title {
-    width: 700px;
-    /* background-color: rgb(42, 217, 248); */
-    left: 21px;
-    position: fixed;
-    top: 21px;
-    margin: 0;
-    padding: 0;
     border:1px solid black ;
     border-bottom: none;
+    left: 21px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 21px;
+    width: 700px;
+    /* background-color: rgb(42, 217, 248); */
+    
 }
 
 .note-title .title {
@@ -35,14 +33,14 @@
 }
 
 .note-title .title:hover {
-    box-sizing: border-box;
     background-color: #cce8ff;
     border: 1px solid #99d1ff;
+    box-sizing: border-box;
 }
 
 .menubar .details {
-    border: 1px solid rgb(238, 230, 230);
     background-color: rgb(238, 230, 230);
+    border: 1px solid rgb(238, 230, 230);
     box-shadow: 5px 5px 5px #a6a6a6;
     font-size: 14px;
     margin: 0;
@@ -54,8 +52,8 @@
 
 .menubar .menuitems {
     display: block;
-    height: 22px;
     font-size: 12px;
+    height: 22px;
     line-height: 22px;
     margin-left: 2px;
     margin-right: 1px;
@@ -80,7 +78,6 @@
 .menubar .menuhr {
     border: 1px solid #d7d7d7;
     display: block;
-    height: 0px;
     margin: 4px;
     margin-left: 20px;
 }
